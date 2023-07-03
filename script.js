@@ -74,3 +74,13 @@ function handleSubmit(event) {
 // Add event listener to the contact form
 const contactForm = document.getElementById("contact-form");
 contactForm.addEventListener("submit", handleSubmit);
+
+
+const navbarToggle = document.getElementById('navbarToggle');
+const navbarLinks = document.getElementById('navbarLinks');
+
+navbarToggle.addEventListener('click', toggleMenu);
+
+function toggleMenu() {
+  navbarLinks.classList.toggle('open');
+}

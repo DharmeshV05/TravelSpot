@@ -5,13 +5,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  background: azure;
+  /* background: azure; */
 }
 
 /* Basic styling for the header */
 header {
   background-color: #333;
-  padding: 20px;
+  padding: 1px;
   color: #fff;
 }
 
@@ -63,11 +63,11 @@ main {
 }
 
 /* Basic styling for the header */
-header {
+/* header {
   background-color: #333;
   padding: 20px;
   color: #fff;
-}
+} */
 
 /* Styling for main content */
 main {
@@ -126,7 +126,8 @@ footer {
 
 footer p {
   margin: 0;
-  color:#555;
+  color:black;
+  font-weight:bold;
 }
 
 /* styles.css */
@@ -137,7 +138,7 @@ footer p {
 }
 
 .logo img {
-  width: 100px; /* Adjust the width as needed */
+  width: 100px; 
   height: auto;
   margin-right: 10px;
 }
@@ -147,3 +148,86 @@ footer p {
   color: #333;
   margin: 0;
 }
+
+
+/* navbar css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: gray;
+  padding: 10px;
+}
+.navbar-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.navbar-links li {
+  margin-left: 20px;
+}
+
+.navbar-links li a {
+ color: #d7d7d7;
+  text-decoration: none;
+}
+
+.navbar-toggle {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 5px 0;
+  transition: background-color 0.3s ease;
+}
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    padding: 10px;
+  }
+
+  .navbar-links li {
+    margin-left: 0;
+    margin-bottom: 10px;
+  }
+
+  .navbar-toggle {
+    display: block;
+  }
+
+  .open .navbar-links {
+    display: flex;
+  }
+}
+
+
+
+/* Dynamic Effect */
+.logo img {
+  animation: rotate3D 10s infinite linear;
+  transform-origin: center center;
+}
+
+@keyframes rotate3D {
+  0% {
+    transform: rotateY(0deg);
+  }
+  50% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+
+/* Rest of your existing CSS styles... */

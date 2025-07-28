@@ -1,71 +1,13 @@
-<!DOCTYPE html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel Spot</title>
-  <link rel="stylesheet" href="styles.css">
-   <!-- Fontawesome CDN Link -->
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
-</head>
-
-<body>
-  
-  <header>
-    <div class="logo">
-      <img src="https://cdn.dribbble.com/users/975402/screenshots/13953721/travelspot_logo.gif" alt="Travel Spot Logo">
-      <nav class="navbar">
-    <ul class="navbar-links" id="navbarLinks">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="/contact.html">Contact</a></li>
-    </ul>
-    <div class="navbar-toggle" id="navbarToggle">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </div>
-  </nav>
-  </header>
-
-  <main id="article-list">
-    <!-- Article content will be dynamically added here using JavaScript -->
-  </main>
-   <main>
-    <section>
-      <h2>Contact Information</h2>
-      <p>Feel free to contact us using the details below:</p>
-      <ul>
-         <li>Email: info@travelspot.com</li>
-        <li>Phone: 123-456-7890</li>
-        <li>Address: 123 Travel Street, City, Country</li>
-      </ul>
-    </section>
-
-    <section>
-      <h2>Send us a Message</h2>
-      <form id="contact-form">
-        <div class="input-box">
-          <input type="text" id="name" required placeholder="Enter your name">
-        </div>
-        <div class="input-box">
-          <input type="email" id="email" required placeholder="Enter your email">
-        </div>
-        <div class="input-box message-box">
-          <textarea id="message" rows="5"required placeholder="Enter your message"></textarea>
-        </div>
-        <button type="submit">Send</button>
-      </form>
-    </section>
-  </main>
-
-  <script src="script.js"></script>
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6150900443906333"
-     crossorigin="anonymous"></script>
-   <footer>
-    <p>&copy; 2023 Travel Spot. All rights reserved.</p>
-  </footer>
-
-</body>
-
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travel Spot</title>
+  </head>
+  <body class="bg-white text-slate-900 dark:bg-slate-900 dark:text-slate-100">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
